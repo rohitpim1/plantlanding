@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: auto;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 50px;
+    transition: 0.5s;
+}
+
+.header .logo a{
+    font-size: 1.7em;
+    font-weight: 700;
+    font-style: italic;
+text-decoration: none;
+color: darkgreen;
+}
+
+.header .logo a:hover{
+    color: #DC7633;
+}
+.header .navbar .nav{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.header .navbar .nav li{
+    padding-right: 30px;
+    list-style: none;
+}
+
+.header .navbar .nav li a{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.header .navbar .nav li a:hover{
+    color: #DC7633;
+}
+
+.header .signIn a{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.header .signIn a:hover{
+ color: #DC7633;
+}
+
+/*home design*/
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+    background: url(bg.jpg);
+    background-position: center;
+    
+    background-size: cover;
+}
+
+.home .content{
+    transition: 0.5s;
+}
+.home .content h4{
+    color:darkgreen;
+    padding-left: 50px;
+    transition: 0.5s;
+}
+
+.home .content h4::first-letter{
+    text-transform: capitalize;
+    
+}
+
+.home .content h3{
+    padding-top: 50px;
+    padding-left: 50px;
+    color: darkgreen;
+}
+
+.home .bttn{
+    padding-left: 50px;
+}
+.home .bttn button{
+    background-color: darkgreen;
+}
+
+.home .bttn button:hover{
+    color: #DC7633;
+}
+
+/*footer design*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .content h5{
+    color: darkgreen;
+}
+
+.footer .icon ul{
+    display: flex;
+    padding-right: 30px;
+}
+
+.footer .icon ul li{
+    padding-right: 20px;
+    list-style: none;
+}
+
+.footer .icon ul li i{
+    width: 30px;
+    height: 30px;
+    border: 2px solid darkgreen;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-top: 7px;
+    color: darkgreen;
+}
+
+.footer.icon ul li i:hover{
+    background-color: #DC7633;
+}
